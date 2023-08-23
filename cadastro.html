@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <img src="logosenai.png" alt="Logo da Empresa" class="logo">
+      <h1>Cadastro de Usuários</h1>
+      <br>
+    <form id="formulario">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required><br>
+
+      <label for="data_nascimento">Data de Nascimento:</label>
+      <input type="date" id="data_nascimento" required><br>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required><br>
+
+      <label for="genero">Gênero:</label>
+      <select id="genero" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Outro">Outro</option>
+      </select><br>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+<br>
+    <!-- Botão de administrador -->
+    <button id="admin-button">Administrador</button>
+
+    <!-- Formulário de senha do administrador -->
+    <form id="admin-form" style="display: none;">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha">
+      <button type="submit" id="admin-submit">Entrar</button>
+    </form>
+
+    <!-- Tabela de usuários -->
+    <div id="tabela-container">
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Data de Nascimento</th>
+            <th>E-mail</th>
+            <th>Gênero</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-corpo"></tbody>
+      </table>
+      <button id="download-csv" style="display: none;">Baixar CSV</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

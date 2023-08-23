@@ -1,0 +1,122 @@
+/* Estilo para o corpo da página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+  display: flex;
+  flex-direction: column; / adiciona uma coluna flexível para os itens dentro do cabeçalho */
+  justify-content: center;
+  align-items: center;
+  background-color: #908aea;
+  padding: 20px;
+  color: #000000;
+  }
+
+  .logo {
+    width: 200px;
+    height: 80px;
+    margin-bottom: 10px; / adiciona uma margem inferior para separar a logo do título */
+    }
+    
+    header h1 {
+    margin: 0; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+/* Estilo para o formulário de cadastro */
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o título do formulário */
+form h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Estilo para os campos do formulário */
+form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para as caixas de texto e seleção */
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o botão de envio */
+form input[type="submit"] {
+  background-color: #908aea;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de envio quando o cursor estiver sobre ele */
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+input[type="submit"]:hover {
+  background-color: #023e8a;
+}
+
+/* Estilos da tabela */
+table {
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+/* Estilos do botão de administrador */
+#admin {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#admin:hover {
+  background-color: #023e8a;
+}
+
+#tabela-container {
+  display: none;
+}
